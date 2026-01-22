@@ -41,3 +41,9 @@ php artisan migrate
 
 - Defaults live in config/code; DB provides environment-specific overrides.
 - Snapshot caching per environment is enabled by default (PSR-16).
+
+## Documentation
+
+- [Feature toggle package types](docs/feature-toggle-types.md)
+- [Developer guide](docs/developer-guide.md)
+- [Repo presentation](docs/repo-presentation.md)
