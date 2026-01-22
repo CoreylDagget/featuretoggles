@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Acme\FeatureTogglesTypo3\Service\Typo3FeatureManagerFactory:
+    public: true
+
+  Acme\FeatureToggles\Contract\FeatureManagerInterface:
+    factory: ['@Acme\FeatureTogglesTypo3\Service\Typo3FeatureManagerFactory', 'create']
+    public: true
